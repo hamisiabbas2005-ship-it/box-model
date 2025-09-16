@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .box {
+            width: 300px;
+            height: 150px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            margin-bottom: 20px;
+        }
+        .container {
+            border: 2px solid #333;
+            padding: 15px;
+            margin: 10px;
+            width: 80%  ;
+            background-color: rgb(146, 20, 20);
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        .item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+        }
+        #container {
+            border: 2px solid #333;
+            padding: 15px;
+            margin: 10px;
+            width: 80%;
+            background-color: rgb(146, 146, 20);
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* gap: 10px; */
+        }
+        .conItems {
+            background-color: #0bccda;
+            border: 1px solid #0b7dda;
+            padding: 20px;
+            margin: 5px;
+            color: white;
+            text-align: center;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        a:hover {
+            text-decoration: underline;
+            
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>jrllo</h1>
+</div>
+
+<div class="container">
+    <div class="item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, maxime similique eos pariatur, in recusandae aliquid sequi amet, illo enim porro. Pariatur minima fugiat cupiditate voluptates nulla adipisci ut et.</p>
+    </div>
+    <div class="item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis voluptatibus ad a commodi fugit, exercitationem ipsam pariatur nobis sunt officia omnis quod nemo dicta magnam amet provident recusandae eaque.</p>
+    </div>
+    <div class="item">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, obcaecati enim neque sit eum non labore necessitatibus odit sunt quaerat quasi consectetur tenetur quas, incidunt sapiente debitis aperiam blanditiis quisquam!</p>
+    </div>
+</div>
+
+<div id="container">
+    <div class="conItems">
+        <a href="">home</a>
+    </div>
+    <div class="conItems">
+        <a href="">school</a>
+    </div>
+    <div class="conItems">
+        <a href="">cv</a>
+    </div>
+    <div class="conItems">
+        <a href="">call</a>
+    </div>
+    <div class="conItems"></div>
+    <div class="conItems"></div>
+</div>
+</body>
+</html>
